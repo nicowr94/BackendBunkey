@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "af216581-2202-4569-aa93-cfd62e80644d",
+		"name": "Project BunKey",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTdiODAxZTEwODJhMGQyMDA3NTRiYyIsImlhdCI6MTYyNTgwMzIwOSwiZXhwIjoxNjI1ODg5NjA5fQ.vheTR_ojP8IAmhePEAOBzkkQdV-LnAzFOegNKn2t0Sc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"developer2\",\r\n    \"email\":\"developer2@bunkey.com\",\r\n    \"password\":\"developer\",\r\n    \"roles\":[\"moderator\"]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Singup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTdiODAxZTEwODJhMGQyMDA3NTRiYyIsImlhdCI6MTYyNTgwMzIwOSwiZXhwIjoxNjI1ODg5NjA5fQ.vheTR_ojP8IAmhePEAOBzkkQdV-LnAzFOegNKn2t0Sc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"developer\",\r\n    \"email\":\"dev@bunkey.com\",\r\n    \"password\":\"developer\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@bunkey.com\",\r\n    \"password\": \"password\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "GetStudent",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTdiODAxZTEwODJhMGQyMDA3NTRiYyIsImlhdCI6MTYyNTgwMzIwOSwiZXhwIjoxNjI1ODg5NjA5fQ.vheTR_ojP8IAmhePEAOBzkkQdV-LnAzFOegNKn2t0Sc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStudentCredits",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTdiODAxZTEwODJhMGQyMDA3NTRiYyIsImlhdCI6MTYyNTgwMzIwOSwiZXhwIjoxNjI1ODg5NjA5fQ.vheTR_ojP8IAmhePEAOBzkkQdV-LnAzFOegNKn2t0Sc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idStudent\":\"60e7be2321d7ce613ca742ed\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/students/credits/60e7be2321d7ce613ca742ed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"students",
+								"credits",
+								"60e7be2321d7ce613ca742ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateStudent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTdiODAxZTEwODJhMGQyMDA3NTRiYyIsImlhdCI6MTYyNTgwMDIxNSwiZXhwIjoxNjI1ODg2NjE1fQ.Sko0ullkZ7Qq0njJj0UNBqzbL1CTT_JU1faajNkWjD4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Juan Perez\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/students/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"students",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "GetCourses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTdiODAxZTEwODJhMGQyMDA3NTRiYyIsImlhdCI6MTYyNTgwMzIwOSwiZXhwIjoxNjI1ODg5NjA5fQ.vheTR_ojP8IAmhePEAOBzkkQdV-LnAzFOegNKn2t0Sc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateCourses",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTdiODAxZTEwODJhMGQyMDA3NTRiYyIsImlhdCI6MTYyNTgwMDIxNSwiZXhwIjoxNjI1ODg2NjE1fQ.Sko0ullkZ7Qq0njJj0UNBqzbL1CTT_JU1faajNkWjD4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Curso de Python 2\",\r\n    \"credit\":3\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/courses/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"courses",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Enrollments",
+			"item": [
+				{
+					"name": "GetEnrollments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTdiODAxZTEwODJhMGQyMDA3NTRiYyIsImlhdCI6MTYyNTgwMzIwOSwiZXhwIjoxNjI1ODg5NjA5fQ.vheTR_ojP8IAmhePEAOBzkkQdV-LnAzFOegNKn2t0Sc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/enrollments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"enrollments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateEnrollments",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTdiODAxZTEwODJhMGQyMDA3NTRiYyIsImlhdCI6MTYyNTgwMDIxNSwiZXhwIjoxNjI1ODg2NjE1fQ.Sko0ullkZ7Qq0njJj0UNBqzbL1CTT_JU1faajNkWjD4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameCourse\":\"Curso de MERN\",\r\n    \"nameStudent\":\"juan perez\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/enrollments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"enrollments",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
